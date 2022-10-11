@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    background-color: white;
+    max-width: 1024px;
+    margin: auto;
+    column-gap: 30px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.item{
+    display: flex;
+    font-family: "Open Sans Regular Bold";
+    letter-spacing: 1.2px;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 11px;
+}
+.item:hover{
+    opacity: 0.5;
+}
