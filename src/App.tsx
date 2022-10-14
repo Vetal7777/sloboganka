@@ -1,5 +1,6 @@
 import './App.css';
 import './fonts/Open Sans /OpenSans-Regular.ttf';
+import styles from './App.module.css'
 import Header from "./components/header/header";
 import {useAppSelector} from "./hooks/redux";
 import LoaderSpinner from "./components/loader-spinner/loader-spinner";
@@ -11,6 +12,7 @@ import {appSlice} from "./store/reducers/appSlice";
 import Article from './components/article/article';
 import Goods from "./components/goods/goods";
 import Benefits from "./components/benefits/benefits";
+import History from "./components/history /history";
 
 function App() {
     const dispatch = useDispatch();
@@ -29,12 +31,13 @@ function App() {
         <>
             <div className={'container'}>
                 {!(showError || isLoading) && (
-                    <>
+                    <span className={styles.show}>
                         <Header/>
                         <Article/>
                         <Goods/>
                         <Benefits/>
-                    </>
+                        <History/>
+                    </span>
                 )}
                 {isLoading && <LoaderSpinner/>}
                 {showError && <ErrorMessage/>}

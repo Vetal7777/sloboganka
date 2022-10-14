@@ -1,0 +1,13 @@
+.show{
+    animation-name: showEffect;
+    animation-duration: 1s;
+    animation-iteration-count: unset;
+}
+@keyframes showEffect {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

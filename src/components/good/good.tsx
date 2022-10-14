@@ -7,11 +7,11 @@ export default function Good({item}:{item:GoodI}){
     const pics = new Array(item.pic_length)
         .fill('')
         .map((elem,index) => `${item.id}-${index + 1}.png`);
-    console.log(pics)
     return (
         <>
             <div className={styles.container}>
                 <Carousel
+                    stopOnHover={false}
                     showThumbs={false}
                     autoPlay={true}
                     showStatus={false}
