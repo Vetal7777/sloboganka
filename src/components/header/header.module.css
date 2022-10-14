@@ -12,6 +12,7 @@
     max-height: 120px;
     top: 0;
     justify-content: center;
+    z-index: 1;
 }
 .item{
     display: flex;

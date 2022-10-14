@@ -25,6 +25,8 @@ interface ArticleI {
 }
 
 export interface GoodI {
+    pic_length: number | string,
+    id: string | number,
     title: string,
     content: string[],
 }

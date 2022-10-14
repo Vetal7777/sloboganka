@@ -1,8 +1,8 @@
 .container{
     display: flex;
     padding: 20px;
-    column-gap: 30px;
+    column-gap: 15px;
+    row-gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
-
 }
