@@ -10,6 +10,7 @@ import API from "./utils/API";
 import {appSlice} from "./store/reducers/appSlice";
 import Article from './components/article/article';
 import Goods from "./components/goods/goods";
+import Benefits from "./components/benefits/benefits";
 
 function App() {
     const dispatch = useDispatch();
@@ -32,6 +33,7 @@ function App() {
                         <Header/>
                         <Article/>
                         <Goods/>
+                        <Benefits/>
                     </>
                 )}
                 {isLoading && <LoaderSpinner/>}

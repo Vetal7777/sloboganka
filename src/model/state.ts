@@ -8,7 +8,7 @@ export interface ContentI {
     header: HeaderItemI[],
     article: ArticleI,
     goods: GoodI[],
-    benefits: BenefitsI[],
+    benefits: BenefitI[],
     history: HistoryItemI[],
     contacts: ContactsI,
 }
@@ -31,7 +31,7 @@ export interface GoodI {
     content: string[],
 }
 
-interface BenefitsI{
+export interface BenefitI{
     title: string,
     content: string,
     ico?:JSX.Element,
