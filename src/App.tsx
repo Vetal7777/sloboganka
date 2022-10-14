@@ -8,6 +8,8 @@ import {useDispatch} from "react-redux";
 import {useEffect} from "react";
 import API from "./utils/API";
 import {appSlice} from "./store/reducers/appSlice";
+import Article from './components/article/article';
+import Goods from "./components/goods/goods";
 
 function App() {
     const dispatch = useDispatch();
@@ -28,6 +30,8 @@ function App() {
                 {!(showError || isLoading) && (
                     <>
                         <Header/>
+                        <Article/>
+                        <Goods/>
                     </>
                 )}
                 {isLoading && <LoaderSpinner/>}

@@ -6,6 +6,12 @@
     column-gap: 30px;
     text-transform: uppercase;
     padding: 20px;
+    align-items: center;
+    position: fixed;
+    min-width: 100vw;
+    max-height: 120px;
+    top: 0;
+    justify-content: center;
 }
 .item{
     display: flex;
@@ -14,8 +20,22 @@
     color: inherit;
     cursor: pointer;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
 }
 .item:hover{
     opacity: 0.5;
+}
+.logo{
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    min-width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets//images/header-logo.png');
+}
+.logo:hover{
+    transform: scale(1.1);
 }

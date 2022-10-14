@@ -13,11 +13,18 @@ export default function Header(){
                 {header?.map((headerItem,index) => (
                     <a
                         key={index}
+                        style={{
+                            order : index > header.length/2 ? 2 : 0
+                        }}
                         className={styles.item}
                         children={headerItem.title}
                         href={headerItem.link}
                     />
                 ))}
+                <a
+                    href='#'
+                    className={styles.logo}
+                />
             </div>
         </>
     )

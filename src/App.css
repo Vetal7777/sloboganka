@@ -16,17 +16,26 @@
   max-width: 2560px;
   margin: auto;
   background-color: white;
+  margin-top: 120px;
 }
 
-@font-face {
-  font-family: "Open Sans Regular";
-  src: local("OpenSansRegular"),
-  url("./fonts/Open Sans /OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
 @font-face {
   font-family: "Open Sans Regular Bold";
   src: local("OpenSansRegularBold"),
   url("./fonts/Open Sans /OpenSans-Regular.ttf") format("truetype");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: local("RobotoCondensedBold"),
+  url("./fonts/Roboto Condensed /RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: local("OpenSansLight"),
+  url("./fonts/Open Sans /OpenSans-Light.ttf") format("truetype");
+  font-weight: normal;
 }

@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 10px;
+    background-color: #0000004a;
+}
+.background{
+    background-image: url('../../assets//images/article-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+h1.title{
+    color: white;
+    font-family: "Roboto Condensed Bold";
+    font-size: 40px;
+}
+h2.title{
+    color: white;
+    font-family: "Open Sans Light";
+    font-size: 15px;
+}
+.youtube{
+    margin-top: 20px;
+}

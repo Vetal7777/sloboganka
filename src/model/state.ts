@@ -24,7 +24,7 @@ interface ArticleI {
     preview_video_link: string,
 }
 
-interface GoodI {
+export interface GoodI {
     title: string,
     content: string[],
 }
