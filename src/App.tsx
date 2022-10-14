@@ -17,7 +17,7 @@ function App() {
 
     useEffect(() => {
         API
-            .get('content')
+            .get('')
             .then(({data}) => dispatch(appSlice.actions.getSuccess(data)))
             .catch(({message}) => dispatch(appSlice.actions.failed(message)));
     },[])
