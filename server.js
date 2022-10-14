@@ -14,4 +14,5 @@ server.use(
 server.use(router);
 server.listen(PORT, () => {
   console.log("Server is running");
+  return {dsd:1}
 });
