@@ -16,10 +16,10 @@ function App() {
     const isLoading = useAppSelector(({isLoading}) => !!isLoading);
 
     useEffect(() => {
-        API
-            .get('content')
-            .then(({data}) => dispatch(appSlice.actions.getSuccess(data)))
-            .catch(({message}) => dispatch(appSlice.actions.failed(message)));
+        // API
+            // .get('content')
+            // .then(({data}) => dispatch(appSlice.actions.getSuccess(data)))
+            // .catch(({message}) => dispatch(appSlice.actions.failed(message)));
     },[])
 
     return (
