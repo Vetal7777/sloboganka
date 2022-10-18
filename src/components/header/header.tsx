@@ -8,10 +8,7 @@ export default function Header(){
 
     return (
         <>
-            <div
-                className={styles.container}
-                id={'header'}
-            >
+            <div className={styles.container}>
                 <div className={styles.list}>
                     {headerLeft?.map((headerItem,index) => (
                         <a

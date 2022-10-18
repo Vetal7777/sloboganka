@@ -1,9 +1,35 @@
 import styles from './history-list.module.css'
 import {useAppSelector} from "../../hooks/redux";
 import HistoryPair from "../history-pair/history-pair";
+import {MdDoneOutline, MdPeople} from "react-icons/md";
+import {AiFillSetting} from "react-icons/ai";
+import {IoMdBook} from "react-icons/io";
+import {HistoryItemI} from "../../model/state";
 
 export default function HistoryList(){
-    const content = useAppSelector(({content}) => content?.history);
+    const style = {
+        fill: '#d62020',
+        minWidth: '40px',
+        minHeight: '40px',
+    }
+
+    const content = useAppSelector(({content}) => content?.history)
+        ?.map((historyItem,index) => {
+            switch (true){
+                case index === 0:
+                    return {...historyItem,ico: <IoMdBook style={style}/>}
+                break;
+                case index === 1:
+                    return {...historyItem,ico: <AiFillSetting style={style}/>}
+                break;
+                case index === 2:
+                    return {...historyItem,ico: <MdPeople style={style}/>}
+                break;
+                case index === 3:
+                    return {...historyItem,ico: <MdDoneOutline style={style}/>}
+                break;
+            }
+        });
     return (
         <>
             <div className={styles.container}>
@@ -15,7 +41,7 @@ export default function HistoryList(){
                             return (
                                 <>
                                     <HistoryPair
-                                        pair={historyPair}
+                                        pair={historyPair as HistoryItemI[]}
                                         print={!(++index % 2)}
                                         key={index}
                                     />

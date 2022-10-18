@@ -13,6 +13,7 @@ import Article from './components/article/article';
 import Goods from "./components/goods/goods";
 import Benefits from "./components/benefits/benefits";
 import HistoryList from "./components/history-list/history-list";
+import Footer from "./components/footer/footer";
 
 function App() {
     const dispatch = useDispatch();
@@ -37,6 +38,7 @@ function App() {
                         <Goods/>
                         <Benefits/>
                         <HistoryList/>
+                        <Footer/>
                     </span>
                 )}
                 {isLoading && <LoaderSpinner/>}

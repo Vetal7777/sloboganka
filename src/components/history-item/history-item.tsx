@@ -9,6 +9,7 @@ export default function HistoryItem({item,way}:{item:HistoryItemI,way:boolean}){
                 style={{flexDirection: way ? 'row-reverse' : 'row'}}
             >
                 <div className={styles.content}>
+                    {item.ico}
                     <h3
                         className={styles.title}
                         children={item.title}
@@ -18,7 +19,12 @@ export default function HistoryItem({item,way}:{item:HistoryItemI,way:boolean}){
                         children={item.content}
                     />
                 </div>
-                <div className={styles.print}></div>
+                <div
+                    className={styles.print}
+                    style={{
+                        backgroundImage: `url(./assets/images/${item.print}.webp)`
+                    }}
+                />
             </div>
         </>
     )

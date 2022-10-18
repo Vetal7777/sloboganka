@@ -5,7 +5,10 @@ export default function Article(){
     const content = useAppSelector(({content}) => content?.article);
     return (
         <>
-            <div className={styles.background}>
+            <div
+                className={styles.background}
+                id={'article'}
+            >
                 <div className={styles.container}>
                     <h1
                         className={styles.title}
