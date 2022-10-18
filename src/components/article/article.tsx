@@ -3,11 +3,13 @@ import styles from './article.module.css'
 
 export default function Article(){
     const content = useAppSelector(({content}) => content?.article);
+    const id = useAppSelector(state => state.content?.header[0].link)
+        ?.replace('#','')
     return (
         <>
-            <div
+            <div 
                 className={styles.background}
-                id={'article'}
+                id={id}
             >
                 <div className={styles.container}>
                     <h1
@@ -20,8 +22,6 @@ export default function Article(){
                     />
                     <iframe
                         className={styles.youtube}
-                        width="560"
-                        height="315"
                         src={content?.preview_video_link}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

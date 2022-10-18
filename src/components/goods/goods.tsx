@@ -5,11 +5,13 @@ import Good from "../good/good";
 
 export default function Goods(){
     const goods = useAppSelector(({content}) => content?.goods) as GoodI[];
+    const id = useAppSelector(state => state.content?.header[2].link)
+        ?.replace('#','')
     return (
         <>
-            <div
+            <div 
                 className={styles.container}
-                id={'goods'}
+                id={id}
             >
                 {goods.map((good,index) => (
                     <Good

@@ -13,6 +13,9 @@ export const appSlice = createSlice({
         failed(state,action:PayloadAction<string>){
             state.isLoading = false;
             state.error = action.payload;
+        },
+        toggleMenuStatus(state){
+            state.showMenu = !state.showMenu;
         }
     }
 })

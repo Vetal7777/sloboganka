@@ -2,9 +2,25 @@
     display: flex;
     column-gap: 20px;
     row-gap: 20px;
-    padding: 20px 40px;
+    padding: 20px calc((100% - 1200px)/2);
     background-color: #020202a3;
     flex-wrap: wrap;
+}
+@media (max-width:1240px) {
+    .container{
+        padding: 20px calc((100% - 1000px)/2);
+    }
+}
+@media (max-width:1024px) {
+    .container{
+        padding: 20px calc((100% - 768px)/2);
+    }
+}
+@media (max-width:800px) {
+    .container{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
 }
 .background{
     background-image: url('../../assets//images/benefits-background.jpg');

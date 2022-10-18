@@ -14,6 +14,7 @@ import Goods from "./components/goods/goods";
 import Benefits from "./components/benefits/benefits";
 import HistoryList from "./components/history-list/history-list";
 import Footer from "./components/footer/footer";
+import Menu from './components/menu/munu';
 
 function App() {
     const dispatch = useDispatch();
@@ -30,9 +31,12 @@ function App() {
 
     return (
         <>
-            <div className={'container'}>
+            <div 
+                className={'container'}
+            >
                 {!(showError || isLoading) && (
                     <span className={styles.show}>
+                        <Menu/>
                         <Header/>
                         <Article/>
                         <Goods/>

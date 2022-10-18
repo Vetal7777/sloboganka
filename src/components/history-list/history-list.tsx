@@ -30,11 +30,14 @@ export default function HistoryList(){
                 break;
             }
         });
+    const id = useAppSelector(state => state.content?.header[1].link)
+    ?.replace('#','')
+
     return (
         <>
-            <div
+            <div 
                 className={styles.container}
-                id={'benefits'}
+                id={id}
             >
                 {
                     content

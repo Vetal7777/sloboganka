@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 20px 40px;
+    padding: 20px calc((100% - 1200px)/2);
     row-gap: 10px;
     background-color: #0000004a;
 }
@@ -23,4 +23,28 @@ h2.title{
 }
 .youtube{
     margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    min-height: 400px;
+}
+@media (max-width:1024px) {
+    .youtube{
+        max-width: 700px;
+    }
+}
+@media (max-width:768px) {
+    .youtube{
+        max-width: unset;
+    }
+    .container{
+        padding: 40px;
+    }
+}
+@media (max-width:425px) {
+    .container{
+        padding: 20px;
+    }
+    .youtube{
+        min-height: 200px;
+    }
 }

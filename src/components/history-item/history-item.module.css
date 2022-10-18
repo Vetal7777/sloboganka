@@ -1,7 +1,26 @@
 .container{
     display: flex;
     background-color: white;
-    flex-direction: column;
+}
+@media (max-width:800px) {
+    .container.row,
+    .container.reverse{
+        flex-direction: column-reverse;
+    }
+    .print{
+        min-height: 400px;
+    }
+}
+@media (max-width:425px) {
+    .print{
+        min-height: 200px;
+    }
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.row{
+    flex-direction: row;
 }
 .title{
     font-family: "Open Sans Regular Bold";
@@ -32,4 +51,12 @@
     font-size: 11px;
     position: relative;
     line-height: 1.857;
+}
+@media (max-width:800px) {
+    .title{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 13px;
+    }
 }

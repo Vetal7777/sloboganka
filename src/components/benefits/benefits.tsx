@@ -32,11 +32,14 @@ export default function Benefits(){
                 break;
             }
         });
+    const id = useAppSelector(state => state.content?.header[3].link)
+    ?.replace('#','')
+
     return (
         <>
-            <div
+            <div 
                 className={styles.background}
-                id={'about'}
+                id={id}
             >
                 <div className={styles.container}>
                     {benefits?.map((benefit,key) => (

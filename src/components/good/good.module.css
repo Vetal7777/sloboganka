@@ -39,3 +39,19 @@
     object-fit: cover;
     object-position: center;
 }
+@media (max-width:800px) {
+    .slide{
+        height: 400px;
+    }
+    .title{
+        font-size: 17px;
+    }
+    .advantage{
+        font-size: 14px;
+    }
+}
+@media (max-width:425px) {
+    .slide{
+        height: 200px;
+    }
+}

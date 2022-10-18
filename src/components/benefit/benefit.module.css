@@ -1,8 +1,9 @@
 .container{
     display: flex;
-    column-gap: 20px;
+    row-gap: 20px;
     flex-basis: 40%;
     flex-grow: 1;
+    flex-direction: column;
 }
 .content{
     display: flex;
@@ -18,4 +19,18 @@
     font-family: "Open Sans Light";
     font-size: 11px;
     color: white;
+    margin-left: 50px;
+}
+.article{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+@media (max-width:800px) {
+    .title{
+        font-size: 17px;
+    }
+    .content{
+        font-size: 14px;
+    }
 }

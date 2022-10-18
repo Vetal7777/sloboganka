@@ -5,17 +5,17 @@ export default function Benefit({item}:{item:BenefitI | undefined}){
     return (
         <>
             <div className={styles.container}>
-                {item?.ico}
-                <div className={styles.content}>
+                <div className={styles.article}>
+                    {item?.ico}
                     <h3
                         className={styles.title}
                         children={item?.title}
                     />
-                    <span
-                        className={styles.content}
-                        children={item?.content}
-                    />
                 </div>
+                <span
+                    className={styles.content}
+                    children={item?.content}
+                />
             </div>
         </>
     )

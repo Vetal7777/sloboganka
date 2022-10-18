@@ -1,6 +1,7 @@
 export interface initialStateI {
     error: null | string,
     isLoading: boolean,
+    showMenu: boolean,
     content: null | ContentI,
 }
 

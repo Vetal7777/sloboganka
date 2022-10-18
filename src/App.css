@@ -9,6 +9,7 @@
   font-family: Helvetica;
   transition: all 0.4s ease 0s;
   outline: none;
+  scroll-behavior: smooth;
 }
 .container{
   display: flex;
@@ -18,7 +19,11 @@
   background-color: white;
   margin-top: 120px;
 }
-
+@media (max-width:768px){
+  .container{
+    margin-top: 90px;
+  }
+}
 @font-face {
   font-family: "Open Sans Regular Bold";
   src: local("OpenSansRegularBold"),

@@ -3,11 +3,13 @@ import {useAppSelector} from "../../hooks/redux";
 
 export default function Footer(){
     const content = useAppSelector(({content}) => content?.contacts);
+    const id = useAppSelector(state => state.content?.header[4].link)
+        ?.replace('#','')
     return (
         <>
-            <div
+            <div 
                 className={styles.container}
-                id={'contacts'}
+                id={id}
             >
                 <div className={styles.phones}>
                     {content?.phones.map((phone,index) => (

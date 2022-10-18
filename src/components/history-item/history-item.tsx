@@ -5,8 +5,7 @@ export default function HistoryItem({item,way}:{item:HistoryItemI,way:boolean}){
     return (
         <>
             <div
-                className={styles.container}
-                style={{flexDirection: way ? 'row-reverse' : 'row'}}
+                className={`${styles.container} ${way ? styles.reverse : styles.row}`}
             >
                 <div className={styles.content}>
                     {item.ico}

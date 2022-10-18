@@ -1,10 +1,13 @@
 import styles from './header.module.css'
 import {useAppSelector} from "../../hooks/redux";
+import { useDispatch } from 'react-redux';
+import {appSlice} from "../../store/reducers/appSlice";
 
 export default function Header(){
     const header = useAppSelector(({content}) => content?.header)
     const headerLeft = header?.slice(0,Math.round(header?.length/2));
     const headerRight = header?.slice(Math.round(header?.length/2),header?.length);
+    const dispatch = useDispatch();
 
     return (
         <>
@@ -33,6 +36,14 @@ export default function Header(){
                         />
                     ))}
                 </div>
+                <button 
+                    className={styles.showMenu}
+                    onClick={() => dispatch(appSlice.actions.toggleMenuStatus())}
+                >
+                    <span className={styles.line}/>
+                    <span className={styles.line}/>
+                    <span className={styles.line}/>
+                </button>
             </div>
         </>
     )
