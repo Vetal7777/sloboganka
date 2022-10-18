@@ -32,7 +32,10 @@ export default function HistoryList(){
         });
     return (
         <>
-            <div className={styles.container}>
+            <div
+                className={styles.container}
+                id={'benefits'}
+            >
                 {
                     content
                         ?.map((historyItem,index) => [historyItem,content[index + 1]])

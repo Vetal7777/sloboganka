@@ -5,7 +5,10 @@ export default function Footer(){
     const content = useAppSelector(({content}) => content?.contacts);
     return (
         <>
-            <div className={styles.container}>
+            <div
+                className={styles.container}
+                id={'contacts'}
+            >
                 <div className={styles.phones}>
                     {content?.phones.map((phone,index) => (
                         <span

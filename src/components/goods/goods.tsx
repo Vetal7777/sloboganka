@@ -7,7 +7,10 @@ export default function Goods(){
     const goods = useAppSelector(({content}) => content?.goods) as GoodI[];
     return (
         <>
-            <div className={styles.container}>
+            <div
+                className={styles.container}
+                id={'goods'}
+            >
                 {goods.map((good,index) => (
                     <Good
                         index={index}

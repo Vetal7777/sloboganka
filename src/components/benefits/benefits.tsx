@@ -34,7 +34,10 @@ export default function Benefits(){
         });
     return (
         <>
-            <div className={styles.background}>
+            <div
+                className={styles.background}
+                id={'about'}
+            >
                 <div className={styles.container}>
                     {benefits?.map((benefit,key) => (
                         <Benefit item={benefit} key={key}/>
