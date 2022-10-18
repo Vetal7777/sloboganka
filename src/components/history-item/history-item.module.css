@@ -1,3 +1,32 @@
 .container{
     display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+.title{
+    font-family: "Open Sans Regular Bold";
+    font-size: 12px;
+    padding: 0 70px;
+    text-align: center;
+}
+.content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    justify-content: center;
+}
+.content,
+.print{
+    flex-basis: 50%;
+}
+.print{
+    background-color: #2e2e2e;
+}
+.text{
+    font-family: "Open Sans Light";
+    font-size: 11px;
+    position: relative;
+    line-height: 1.857;
 }

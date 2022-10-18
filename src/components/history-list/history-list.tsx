@@ -1,15 +1,28 @@
 import styles from './history-list.module.css'
 import {useAppSelector} from "../../hooks/redux";
-import {HistoryItemI} from "../../model/state";
+import HistoryPair from "../history-pair/history-pair";
 
 export default function HistoryList(){
-    const content:HistoryItemI[] = useAppSelector(({content}) => content?.history) as HistoryItemI[];
+    const content = useAppSelector(({content}) => content?.history);
     return (
         <>
             <div className={styles.container}>
-                {content.map((item,key) => (
-                    <></>
-                ))}
+                {
+                    content
+                        ?.map((historyItem,index) => [historyItem,content[index + 1]])
+                        .filter((elem,index) => ++index % 2 ? elem : undefined)
+                        .map((historyPair,index) => {
+                            return (
+                                <>
+                                    <HistoryPair
+                                        pair={historyPair}
+                                        print={!(++index % 2)}
+                                        key={index}
+                                    />
+                                </>
+                            )
+                        })
+                }
             </div>
         </>
     )

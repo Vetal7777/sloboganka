@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+.border{
+    border: 1px solid lightgrey;
+}
+.back{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.print{
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../assets/images/history-back.webp');
+}

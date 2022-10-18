@@ -21,8 +21,9 @@ export default function Good({item,index}:{item:GoodI,index:number}){
                     infiniteLoop={true}
                     showIndicators={false}
                 >
-                    {pics.map(picture => (
+                    {pics.map((picture,index) => (
                         <img
+                            key={index}
                             src={`./assets/images/${item.id}/${picture}`}
                             className={styles.slide}
                         />
@@ -33,8 +34,9 @@ export default function Good({item,index}:{item:GoodI,index:number}){
                         className={styles.title}
                         children={item.title}
                     />
-                    {item.content.map(advantage => (
+                    {item.content.map((advantage,index) => (
                         <span
+                            key={index}
                             className={styles.advantage}
                             children={advantage}
                         />

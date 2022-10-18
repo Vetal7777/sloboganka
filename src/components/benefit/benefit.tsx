@@ -7,7 +7,7 @@ export default function Benefit({item}:{item:BenefitI | undefined}){
             <div className={styles.container}>
                 {item?.ico}
                 <div className={styles.content}>
-                    <span
+                    <h3
                         className={styles.title}
                         children={item?.title}
                     />

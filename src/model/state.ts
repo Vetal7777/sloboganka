@@ -41,6 +41,7 @@ export interface HistoryItemI {
     ico?:JSX.Element,
     title: string,
     content: string,
+    print: string,
 }
 
 interface ContactsI {
