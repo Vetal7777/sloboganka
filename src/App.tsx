@@ -12,7 +12,7 @@ import {appSlice} from "./store/reducers/appSlice";
 import Article from './components/article/article';
 import Goods from "./components/goods/goods";
 import Benefits from "./components/benefits/benefits";
-import History from "./components/history /history";
+import HistoryList from "./components/history-list/history-list";
 
 function App() {
     const dispatch = useDispatch();
@@ -36,7 +36,7 @@ function App() {
                         <Article/>
                         <Goods/>
                         <Benefits/>
-                        <History/>
+                        <HistoryList/>
                     </span>
                 )}
                 {isLoading && <LoaderSpinner/>}

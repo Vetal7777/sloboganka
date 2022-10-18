@@ -8,9 +8,10 @@ export default function Goods(){
     return (
         <>
             <div className={styles.container}>
-                {goods.map((good,key) => (
+                {goods.map((good,index) => (
                     <Good
-                        key={key}
+                        index={index}
+                        key={index}
                         item={good}
                     />
                 ))}

@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.print{
+    background-image: url('../../assets//images/history-back.webp');
+    padding: 20px 40px;
+    background-position: center;
+    background-size: cover;
+}
+.item{
+    display: flex;
+    background-color: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px;
+    flex-basis: 50%;
+}
+.image{
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+}

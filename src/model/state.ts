@@ -13,7 +13,7 @@ export interface ContentI {
     contacts: ContactsI,
 }
 
-interface HeaderItemI {
+export interface HeaderItemI {
     title: string,
     link: string
 }
@@ -37,7 +37,7 @@ export interface BenefitI{
     ico?:JSX.Element,
 }
 
-interface HistoryItemI {
+export interface HistoryItemI {
     ico?:JSX.Element,
     title: string,
     content: string,
