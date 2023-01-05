@@ -6,14 +6,14 @@ export const appSlice = createSlice({
     name: 'App',
     initialState,
     reducers: {
-        getSuccess(state,action:PayloadAction<ContentI>){
-            state.isLoading = false;
-            state.content = action.payload;
-        },
-        failed(state,action:PayloadAction<string>){
-            state.isLoading = false;
-            state.error = action.payload;
-        },
+        // getSuccess(state,action:PayloadAction<ContentI>){
+        //     state.isLoading = false;
+        //     state.content = action.payload;
+        // },
+        // failed(state,action:PayloadAction<string>){
+        //     state.isLoading = false;
+        //     state.error = action.payload;
+        // },
         toggleMenuStatus(state){
             state.showMenu = !state.showMenu;
         }

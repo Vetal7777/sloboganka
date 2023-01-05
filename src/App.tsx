@@ -22,12 +22,12 @@ function App() {
     const showError = useAppSelector(({error}) => !!error);
     const isLoading = useAppSelector(({isLoading}) => !!isLoading);
 
-    useEffect(() => {
-        API
-            .get('')
-            .then(({data}) => dispatch(appSlice.actions.getSuccess(data)))
-            .catch(({message}) => dispatch(appSlice.actions.failed(message)));
-    },[])
+    // useEffect(() => {
+    //     API
+    //         .get('')
+    //         .then(({data}) => dispatch(appSlice.actions.getSuccess(data)))
+    //         .catch(({message}) => dispatch(appSlice.actions.failed(message)));
+    // },[])
 
     return (
         <>
