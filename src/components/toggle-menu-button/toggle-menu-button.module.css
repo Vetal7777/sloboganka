@@ -1,0 +1,23 @@
+.showMenu {
+  display: none;
+  flex-direction: column;
+  row-gap: 5px;
+  min-width: 30px;
+  margin-right: 20px;
+}
+.showMenu:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.line {
+  display: flex;
+  height: 2px;
+  background-color: black;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .showMenu {
+    display: flex;
+  }
+}

@@ -1,0 +1,21 @@
+.exit {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 1px solid hsla(0, 0%, 61%, 0.2);
+  padding: 10px;
+  transform: rotate(45deg);
+}
+.line {
+  background-color: #fff;
+  height: 1px;
+  width: 100%;
+  display: flex;
+}
+.line:first-child {
+  transform: rotate(90deg);
+}
+.exit:hover .line {
+  background-color: hsla(0, 0%, 61%, 0.2);
+}

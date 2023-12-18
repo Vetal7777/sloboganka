@@ -1,35 +1,35 @@
-import { useDispatch } from 'react-redux';
-import { useAppSelector } from '../../hooks/redux';
-import styles from './menu.module.css';
-import {appSlice} from "../../store/reducers/appSlice";
+import { useMemo } from 'react'
+import { useDispatch } from 'react-redux'
+import { useAppSelector } from '../../hooks/redux'
+import { appSlice } from '../../store/reducers/appSlice'
+import ExitButton from '../exit-button/exit-button'
+import styles from './menu.module.css'
 
-export default function Menu(){
-    const header = useAppSelector(({content}) => content?.header)
-    const show =useAppSelector(state => state.showMenu);
-    const dispatch = useDispatch();
+export default function Menu() {
+  const dispatch = useDispatch()
 
-    return (
-        <>
-            <div className={`${styles.container} ${!show ? styles.hide : ''}`}>
-                <div className={styles.list}>
-                    {header?.map((item,index) => (
-                        <a
-                            className={styles.item}
-                            key={index}
-                            children={item.title}
-                            href={item.link}
-                            onClick={() => dispatch(appSlice.actions.toggleMenuStatus())}
-                        />
-                    ))}
-                </div>
-                <button
-                    className={styles.exit}
-                    onClick={() => dispatch(appSlice.actions.toggleMenuStatus())}
-                >
-                    <span className={styles.line}/>
-                    <span className={styles.line}/>
-                </button>
-            </div>
-        </>
-    )
+  const header = useAppSelector(({ content }) => content?.header)
+  const show = useAppSelector((state) => state.showMenu)
+  const statusClass = useMemo(() => (!show ? styles.hide : ''), [show])
+
+  const toggleMenuStatus = () => dispatch(appSlice.actions.toggleMenuStatus())
+
+  return (
+    <>
+      <nav className={`${styles.container} ${statusClass}`}>
+        <div className={styles.list}>
+          {header?.map(({ title, link }, index) => (
+            <a
+              className={styles.item}
+              key={index}
+              children={title}
+              href={link}
+              onClick={toggleMenuStatus}
+            />
+          ))}
+        </div>
+        <ExitButton />
+      </nav>
+    </>
+  )
 }
