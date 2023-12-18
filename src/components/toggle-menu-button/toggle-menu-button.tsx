@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux'
 import { appSlice } from '../../store/reducers/appSlice'
 import styles from './toggle-menu-button.module.css'
 
-export default function toggleMenuButton() {
+export default function ToggleMenuButton() {
   const dispatch = useDispatch()
   const toggleMenuStatus = () => dispatch(appSlice.actions.toggleMenuStatus())
   return (
