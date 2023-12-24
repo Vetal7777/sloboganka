@@ -1,15 +1,17 @@
-import { BenefitI } from '../../model/state'
+import { BenefitProps } from '../../@types'
 import styles from './benefit.module.css'
 
-export default function Benefit({ item }: { item: BenefitI | undefined }) {
+export function Benefit({ item }: BenefitProps) {
+  const { title, content, icoComponent } = item
+
   return (
     <>
       <div className={styles.container}>
         <div className={styles.article}>
-          {item?.ico}
-          <h3 className={styles.title} children={item?.title} />
+          {icoComponent}
+          <h3 className={styles.title} children={title} />
         </div>
-        <span className={styles.content} children={item?.content} />
+        <span className={styles.content} children={content} />
       </div>
     </>
   )

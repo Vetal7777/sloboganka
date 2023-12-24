@@ -1,15 +1,9 @@
 import { useMemo } from 'react'
-import { HistoryItemI } from '../../model/state'
-import HistoryItem from '../history-item/history-item'
+import { HistoryPairProps } from '../../@types'
+import { HistoryItem } from '../history-item/history-item'
 import styles from './history-pair.module.css'
 
-export default function HistoryPair({
-  print,
-  pair
-}: {
-  print: boolean
-  pair: HistoryItemI[]
-}) {
+export function HistoryPair({ print, pair }: HistoryPairProps) {
   const printClass = useMemo(() => (print ? styles.print : ''), [print])
   const borderClass = useMemo(() => (!print ? styles.border : ''), [print])
 

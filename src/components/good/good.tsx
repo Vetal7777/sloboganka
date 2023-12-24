@@ -1,18 +1,21 @@
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-import { GoodI } from '../../model/state'
+import { GoodProps } from '../../@types'
 import styles from './good.module.css'
 
-export default function Good({ item, index }: { item: GoodI; index: number }) {
-  const pics = new Array(item.pic_length)
+export function Good({
+  item: { pic_length, id, content, title },
+  index
+}: GoodProps) {
+  const pics = new Array(pic_length)
     .fill('')
-    .map((elem, index) => `${item.id}-${index + 1}.png`)
+    .map((elem, picIndex) => `${id}-${picIndex + 1}.png`)
+
+  const flexBasis = `${index < 2 ? 40 : 30}%`
+
   return (
     <>
-      <div
-        className={styles.container}
-        style={{ flexBasis: `${index < 2 ? 40 : 30}%` }}
-      >
+      <div className={styles.container} style={{ flexBasis }}>
         <Carousel
           stopOnHover={false}
           showThumbs={false}
@@ -21,20 +24,20 @@ export default function Good({ item, index }: { item: GoodI; index: number }) {
           infiniteLoop={true}
           showIndicators={false}
         >
-          {pics.map((picture, index) => (
+          {pics.map((picture, pictureIndex) => (
             <img
               loading="lazy"
-              key={index}
-              src={`./assets/images/${item.id}/${picture}`}
+              key={pictureIndex}
+              src={`./assets/images/${id}/${picture}`}
               className={styles.slide}
             />
           ))}
         </Carousel>
         <div className={styles.content}>
-          <h3 className={styles.title} children={item.title} />
-          {item.content.map((advantage, index) => (
+          <h3 className={styles.title} children={title} />
+          {content.map((advantage, contentIndex) => (
             <div
-              key={index}
+              key={contentIndex}
               className={styles.advantage}
               children={advantage}
             />

@@ -2,7 +2,7 @@ import { Oval } from 'react-loader-spinner'
 import { useAppSelector } from '../../hooks/redux'
 import styles from './loader-spinner.module.css'
 
-export default function LoaderSpinner() {
+export function LoaderSpinner() {
   const isLoading = useAppSelector(({ isLoading }) => Boolean(isLoading))
 
   return (

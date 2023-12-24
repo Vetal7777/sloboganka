@@ -1,6 +1,7 @@
+import { HistoryIconProps } from '../../@types'
 import styles from './history-print.module.css'
 
-export default function HistoryIcon({ print }: { print: string }) {
+export function HistoryIcon({ print }: HistoryIconProps) {
   return (
     <>
       <div

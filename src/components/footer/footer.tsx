@@ -1,17 +1,14 @@
-import { useAppSelector } from '../../hooks/redux'
+import { contacts } from '../../data/content'
 import styles from './footer.module.css'
 
-export default function Footer() {
-  const content = useAppSelector(({ content }) => content?.contacts)
-  const id = useAppSelector((state) => state.content?.header[4].link)?.replace(
-    '#',
-    ''
-  )
+export function Footer() {
+  const { phones, mail, location } = contacts
+
   return (
     <>
-      <div className={styles.container} id={id}>
+      <div className={styles.container} id={'contacts'}>
         <div className={styles.phones}>
-          {content?.phones.map((phone, index) => (
+          {phones.map((phone, index) => (
             <span children={phone} key={index} className={styles.phone} />
           ))}
         </div>
@@ -19,9 +16,9 @@ export default function Footer() {
           <a
             href="mailto:sloboganka2@ukr.net"
             className={styles.mail}
-            children={content?.mail}
+            children={mail}
           />
-          <span children={content?.location} className={styles.location} />
+          <span children={location} className={styles.location} />
         </div>
       </div>
     </>
