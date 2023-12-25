@@ -38,9 +38,6 @@
 }
 
 @media (max-width: 768px) {
-  .list {
-    display: none;
-  }
   .container {
     justify-content: space-between;
     padding: 5px 20px;

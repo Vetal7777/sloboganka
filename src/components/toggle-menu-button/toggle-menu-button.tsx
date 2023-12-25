@@ -8,7 +8,7 @@ export function ToggleMenuButton() {
 
   return (
     <>
-      <button className={styles.showMenu} onClick={toggleMenuStatus}>
+      <button className={styles.container} onClick={toggleMenuStatus}>
         <span className={styles.line} />
         <span className={styles.line} />
         <span className={styles.line} />
