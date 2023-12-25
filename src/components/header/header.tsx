@@ -5,10 +5,10 @@ import { ToggleMenuButton } from '../toggle-menu-button/toggle-menu-button'
 import styles from './header.module.css'
 
 export function Header() {
-  const headerFirstList = header?.slice(0, Math.round(header?.length / 2))
-  const headerRightList = header?.slice(
+  const headerFirstList = header.slice(0, Math.round(header.length / 2))
+  const headerRightList = header.slice(
     Math.round(header?.length / 2),
-    header?.length
+    header.length
   )
   const [isMobile, setIsMobile] = useState(isMobileSize())
 
