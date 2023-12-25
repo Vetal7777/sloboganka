@@ -16,14 +16,13 @@ export function Header() {
     window.addEventListener('resize', handleResize)
   })
 
-  const handleResize = () => {
+  function handleResize() {
     if (isMobileSize()) {
       setIsMobile(true)
     } else {
       setIsMobile(false)
     }
   }
-
   function isMobileSize() {
     return window.innerWidth < 720
   }
