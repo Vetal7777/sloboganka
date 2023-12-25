@@ -4,7 +4,7 @@ import { IoMdBook } from 'react-icons/io'
 import { MdDoneOutline, MdPeople } from 'react-icons/md'
 import type { HistoryItem } from '../../@types'
 import { history } from '../../data/content'
-import { HistoryPair } from '../history-pair/history-pair'
+import { HistoryPair } from '../history-pair'
 import styles from './history-list.module.css'
 
 export function HistoryList() {

@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { HistoryItemProps } from '../../@types'
-import { HistoryIcon } from '../history-print/history-print'
+import { HistoryIcon } from '../history-print'
 import styles from './history-item.module.css'
 
 export function HistoryItem({ item, way }: HistoryItemProps) {

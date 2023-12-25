@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { HistoryPairProps } from '../../@types'
-import { HistoryItem } from '../history-item/history-item'
+import { HistoryItem } from '../history-item'
 import styles from './history-pair.module.css'
 
 export function HistoryPair({ print, pair }: HistoryPairProps) {

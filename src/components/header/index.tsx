@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { header } from '../../data/content'
-import { HeaderNavItem } from '../header-nav-ltem/header-nav-ltem'
-import { ToggleMenuButton } from '../toggle-menu-button/toggle-menu-button'
+import { HeaderNavItem } from '../header-nav-ltem'
+import { ToggleMenuButton } from '../toggle-menu-button'
 import styles from './header.module.css'
 
 export function Header() {

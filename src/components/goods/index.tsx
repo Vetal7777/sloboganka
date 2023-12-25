@@ -1,5 +1,5 @@
 import { goods } from '../../data/content'
-import { Good } from '../good/good'
+import { Good } from '../good'
 import styles from './goods.module.css'
 
 export function Goods() {

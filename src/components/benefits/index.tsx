@@ -5,7 +5,7 @@ import {
   MdVerified
 } from 'react-icons/md'
 import { benefits, header } from '../../data/content'
-import { Benefit } from '../benefit/benefit'
+import { Benefit } from '../benefit'
 import styles from './benefits.module.css'
 
 export function Benefits() {

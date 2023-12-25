@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { header } from '../../data/content'
 import { useAppSelector } from '../../hooks/redux'
 import { appSlice } from '../../store/reducers/appSlice'
-import { ExitButton } from '../exit-button/exit-button'
+import { ExitButton } from '../exit-button'
 import styles from './menu.module.css'
 
 export function Menu() {
