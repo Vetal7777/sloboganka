@@ -11,23 +11,24 @@
   max-height: 120px;
   top: 0;
   justify-content: center;
+  width: 100%;
   z-index: 100;
-}
-.list {
-  flex-basis: 40%;
-  display: flex;
   column-gap: 20px;
 }
-.list:first-child {
-  justify-content: flex-end;
+.list {
+  display: flex;
+  align-items: center;
+  max-width: 1024px;
+  width: 100%;
 }
 
 .logo {
-  flex-basis: 20%;
   display: flex;
+  flex-basis: 20%;
   align-items: center;
   justify-content: center;
   min-height: 80px;
+  min-width: 80px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

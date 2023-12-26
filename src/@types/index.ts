@@ -23,6 +23,7 @@ export type GoodProps = {
 export type HeaderNavProps = {
   title: string
   link: string
+  flexBasis?: string
 }
 
 export type HistoryIconProps = { print: string }
