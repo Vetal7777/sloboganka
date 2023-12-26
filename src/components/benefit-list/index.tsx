@@ -4,11 +4,11 @@ import {
   MdReplayCircleFilled,
   MdVerified
 } from 'react-icons/md'
-import { benefits, header } from '../../data/content'
+import { benefits } from '../../data/content'
 import { Benefit } from '../benefit'
-import styles from './benefits.module.css'
+import styles from './benefit-list.module.css'
 
-export function Benefits() {
+export function BenefitList() {
   const iconStyle = {
     fill: 'white',
     minWidth: '30px',
@@ -40,13 +40,12 @@ export function Benefits() {
         break
     }
   })
-  const id = header[3].link.replace('#', '')
 
   return (
     <>
-      <div className={styles.background} id={id}>
+      <div className={styles.background} id={'benefits'}>
         <div className={styles.container}>
-          {benefitsList?.map(
+          {benefitsList.map(
             (benefit, key) => benefit && <Benefit item={benefit} key={key} />
           )}
         </div>

@@ -3,7 +3,7 @@ import './App.css'
 import styles from './App.module.css'
 import './assets/fonts/Open Sans /OpenSans-Regular.ttf'
 import { Article } from './components/article'
-import { Benefits } from './components/benefits'
+import { BenefitList } from './components/benefit-list'
 import { ErrorMessage } from './components/error-message'
 import { Footer } from './components/footer'
 import { Goods } from './components/goods'
@@ -30,7 +30,7 @@ function App() {
             <Header />
             <Article />
             <Goods />
-            <Benefits />
+            <BenefitList />
             <HistoryList />
             <Footer />
           </div>
