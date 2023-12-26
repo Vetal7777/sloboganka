@@ -3,6 +3,8 @@ import { header } from '../../data/content'
 import { HeaderNavItem } from '../header-nav-ltem'
 import { ToggleMenuButton } from '../toggle-menu-button'
 import styles from './header.module.css'
+const MAX_DESKTOP_WIDTH = 720
+const HALF_HEADER_FLEX_BASIS = 40
 
 export function Header() {
   const [isMobile, setIsMobile] = useState(isMobileSize())
@@ -19,7 +21,7 @@ export function Header() {
     }
   }
   function isMobileSize() {
-    return window.innerWidth < 720
+    return window.innerWidth < MAX_DESKTOP_WIDTH
   }
 
   return (
@@ -30,7 +32,7 @@ export function Header() {
             const halfLength = header.length / 2
             const roundedHalfLength = Math.round(halfLength)
             const showLogo = roundedHalfLength === index
-            const flexBasis = 40 / roundedHalfLength + '%'
+            const flexBasis = HALF_HEADER_FLEX_BASIS / roundedHalfLength + '%'
 
             return (
               <>
