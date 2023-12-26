@@ -1,119 +1,115 @@
 export const article = {
-  title: 'Слобожанка',
-  description: 'якість на першому місці',
+  title: 'article.title',
+  description: 'article.description',
   preview_video_link: 'https://www.youtube.com/embed/RMZdbFlc_mU'
 }
 export const benefits = [
   {
-    title: 'Вигідне співробітництво',
-    content:
-      'За роки плідної співпраці з основними постачальниками металу, такими як ArcelorMittal, Магнітогорським металургійним комбінатом та Карагандинським металургійним комбінатом Слобожанка досягає найбільш вигідних умов співробітництва та постачання основної сировини'
+    title: 'benefits.advantageous_cooperation.title',
+    content: 'benefits.advantageous_cooperation.content'
   },
   {
-    title: 'Постійно розвиваємося',
-    content:
-      'Наявність повного технологічного циклу виготовлення металоупаковки починаючи від нарізки рулонної жерсті та закінчуючи відвантаженням готової продукції власним транспортом на базі сучасного обладнання Soudronic AG (Швейцарія), Celovani S.p.a., SIG Cantec Gmbh & Co.KG, Alfons-Haar Masnen ) та LTG Mailander (Німеччина)'
+    title: 'benefits.constant_development.title',
+    content: 'benefits.constant_development.content'
   },
   {
-    title: 'Логістика',
-    content:
-      'Наявність власного транспортного підрозділу та логістичного центру, який дозволяє з мінімальними витратами здійснювати постачання готової продукції до будь-якої точки України та країн СНД'
+    title: 'benefits.logistics.title',
+    content: 'benefits.logistics.content'
   },
   {
-    title: 'Безпека',
-    content:
-      'Команда спеціалістів сервісної служби надає можливість забезпечити використання металоупаковки у технологічних процесах наших замовників з максимально можливою ефективністю та досягти мінімальних показників шлюбу.'
+    title: 'benefits.safety.title',
+    content: 'benefits.safety.content'
   }
 ]
 export const contacts = {
   phones: ['+38 (050) 323-51-55', '+38 (050) 403-00-76'],
   mail: 'sloboganka2@ukr.net',
-  location: 'Українa, м. Харків, вул. Механізаторів, 2'
+  location: 'contacts.location'
 }
 export const goods = [
   {
     id: 'euro82',
     pic_length: 30,
-    title: 'Кришка ТВІСТ-ОФФ 82',
+    title: 'goods.euro_82.title',
     content: [
-      'Основний метал: жерсть ЕЖК із класом покриття оловом 5,6/5,6 на 1г/м.кв. Товщиною від 0,18 до 0,20',
-      'Типорозмір: 82',
-      'Зовнішнє покриття: емалі та покривні лаки фірми Darex, PPG,Holak.',
-      'Внутрішнє покриття: ґрунт та адгезійний лак',
-      'Компаунд: на основі ПВХ - пластизоль під стерилізацію/пастеризацію'
+      'goods_params.main_metal_thickness.thickness_18-20',
+      'goods_params.type_size.type_size_82',
+      'goods_params.external_coating.darex_ppg_holax',
+      'goods_params.internal_coating.primer_lacquer',
+      'goods_params.compound.pvc_plastisol_steril_paste'
     ]
   },
   {
     id: 'euro66',
     pic_length: 10,
-    title: 'Кришка ТВІСТ-ОФФ 66',
+    title: 'goods.euro_66.title',
     content: [
-      'Основний метал: жерсть ЕЖК із класом покриття оловом 5,6/5,6 на 1г/м.кв. Товщиною від 0,18 до 0,20',
-      'Типорозмір: 66',
-      'Зовнішнє покриття: емалі та покривні лаки фірми Darex, PPG,Holak.',
-      'Внутрішнє покриття: ґрунт та адгезійний лак',
-      'Компаунд: на основі ПВХ - пластизоль під стерилізацію/пастеризацію'
+      'goods_params.main_metal_thickness.thickness_18-20',
+      'goods_params.type_size.type_size_66',
+      'goods_params.external_coating.darex_ppg_holax',
+      'goods_params.internal_coating.primer_lacquer',
+      'goods_params.compound.pvc_plastisol_steril_paste'
     ]
   },
   {
     id: 'sng-home82',
     pic_length: 4,
-    title: 'Кришка СКО 1-82 господарська',
+    title: 'goods.sng_home_82.title',
     content: [
-      'Основний метал: жерсть ЕЖК із класом покриття оловом 5,6/5,6 на 1г/м.кв. Товщиною від 0,17 до 0,20',
-      'Типорозмір: 82',
-      'Двостороннє покриття: харчові лаки та емалі PPG та HOLAK',
-      'Кільце ущільнювача: кільце вікеля на основі каучуку харчового'
+      'goods_params.main_metal_thickness.thickness_17-20',
+      'goods_params.type_size.type_size_82',
+      'goods_params.double_sided_coating.ppg_lacquer',
+      'goods_params.seal_ring.nickel_ring_foodgrade_rubber'
     ]
   },
   {
     id: 'sng-prom82',
     pic_length: 18,
-    title: 'Кришка СКО 1-82 для промислового виробництва',
+    title: 'goods.sng_prom_82.title',
     content: [
-      'Основний метал: жерсть ЕЖК із класом покриття оловом 5,6/5,6 на 1г/м.кв. Товщиною від 0,18 до 0,22',
-      'Типорозмір: 82',
-      'Зовнішнє покриття: харчові лаки PPG і HOLAK',
-      'Внутрішнє покриття: емаль РРG',
-      'Кільце ущільнювача: кільце для вікон на основі каучуку харчового'
+      'goods_params.main_metal_thickness.thickness_18-22',
+      'goods_params.type_size.type_size_82',
+      'goods_params.external_coating.ppg_holax',
+      'goods_params.internal_coating.ppg',
+      'goods_params.seal_ring.nickel_ring_foodgrade_rubber'
     ]
   },
   {
     id: 'sng58',
     pic_length: 2,
-    title: 'Кришка СКО 1-58',
+    title: 'goods.sng_58.title',
     content: [
-      'Основний метал: жерсть ЕЖК із класом покриття оловом 5,6/5,6 на 1г/м.кв. Товщиною від 0,18 до 0,22',
-      'Типорозмір: 58',
-      'Зовнішнє покриття: харчові лаки PPG та HOLAK',
-      'Внутрішнє покриття: емаль РРG',
-      'Кільце ущільнювача: вікальне кільце на основі каучуку харчового'
+      'goods_params.main_metal_thickness.thickness_18-22',
+      'goods_params.type_size.type_size_58',
+      'goods_params.external_coating.ppg_holax',
+      'goods_params.internal_coating.ppg',
+      'goods_params.seal_ring.nickel_ring_foodgrade_rubber'
     ]
   }
 ]
 export const header = [
   {
-    title: 'головна',
+    title: 'header.title.main',
     link: '#article',
     id: 'article'
   },
   {
-    title: 'про компанію',
+    title: 'header.title.about_company',
     link: '#about',
     id: 'about'
   },
   {
-    title: 'продукція',
+    title: 'header.title.products',
     link: '#goods',
     id: 'goods'
   },
   {
-    title: 'переваги',
+    title: 'header.title.advantages',
     link: '#benefits',
     id: 'benefits'
   },
   {
-    title: 'контакти',
+    title: 'header.title.contacts',
     link: '#contacts',
     id: 'contacts'
   }
@@ -121,26 +117,22 @@ export const header = [
 export const history = [
   {
     print: 'history',
-    title: 'Історія',
-    content:
-      'Компанія «Слобожанка» є одним з українських лідерів з виробництва промислових кришок типу СКО та Твіст–Офф.\nC метою збереження лідерства у виробництві кришок для пляшок, бляшанок для консервації, кришок Твіст–Офф та СКО, компанія «Слобожанка» організовує роботу на основу індивідуального підходу до кожного замовника. Задоволення всіх потреб клієнта передбачає співпрацю з ним на рівні, який максимально забезпечує комплексність та прийнятність обслуговування. Наше підприємство стоїть біля витоків впровадження в Україні сучасних видів тари та упаковки світового рівня.'
+    title: 'history.title.history',
+    content: 'history.content.history'
   },
   {
     print: 'production',
-    title: 'Виробництво',
-    content:
-      'На сьогоднішній день підприємство має в своєму розпорядженні кілька виробничих баз і три лінії з літографування та лакування жерсті. Колектив компанії «Слобожанка» – це справжні професіонали, які готові в найкоротші терміни виконати замовлення клієнтів. Одним з основних напрямків діяльності є виробництво кришки типу Твіст-Офф та кришки СКО. Високотехнологічне сучасне обладнання для виробництва кришок забезпечує високий рівень якості продукції та своєчасність її постачання. Під час виробництва кришок використовуються високоякісні матеріали від найбільших світових постачальників.'
+    title: 'history.title.production',
+    content: 'history.content.production'
   },
   {
     print: 'relationship',
-    title: 'Індивідуальний підхід до кожного клієнта',
-    content:
-      'Залежно від побажань замовника ми пропонуємо різноманітну металеву кришку, виходячи з конкретного виду консервації та вимог до зовнішнього вигляду готової продукції. Рекомендовані товщини жерсті, зовнішнє і внутрішнє покриття-дають можливість замовнику отримати за мінімальну ціну жерстяну кришку СКО або ТВІСТ-ОФФ з необхідною саме для нього функціональністю. і для високотемпературної стерилізації, що застосовують для жировмісних продуктів, а також будь-яких кольорів або з нанесенням повнокольорового друку.\n\nУ виробництві використовуються тільки найкраща сировина та матеріал для випуску виключно якісної продукції.'
+    title: 'history.title.relationship',
+    content: 'history.content.relationship'
   },
   {
     print: 'reliability',
-    title: 'Надійність',
-    content:
-      'Наше підприємство використовує у виробництві виключно білу жерсть ЕЖК, необхідної товщини та класу покриття олова, щоб не економити на сировині за рахунок якості продукції, що випускається.\n\nУ 2002 році дочірнє підприємство отримало премію «Російський Національний Олімп». та сервіс-основні принципи роботи, на яких заснована робота нашої компанії\nПрацюючи з нашим підприємством Ви отримуєте надійного постачальника високоякісної продукції з жерсті, забезпечуючи успішність Ваших товарів та бізнесу!!!\n\nНаша надійність, якості товару та сервіс – це запорука успішного бізнесу наших клієнтів!!'
+    title: 'history.title.reliability',
+    content: 'history.content.reliability'
   }
 ]

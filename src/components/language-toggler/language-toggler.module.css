@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  background-color: #c5362c;
+  min-width: 50px;
+  min-height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "article": {
+    "title": "Slobozhanka",
+    "description": "quality comes first"
+  },
+  "benefits": {
+    "advantageous_cooperation": {
+      "title": "Advantageous Cooperation",
+      "content": "After years of fruitful collaboration with key metal suppliers such as ArcelorMittal, Magnitogorsk Metallurgical Combine, and Karaganda Metallurgical Combine, Slobozhanka achieves the most favorable conditions for cooperation and supply of basic raw materials."
+    },
+    "constant_development": {
+      "title": "Constant Development",
+      "content": "Having a complete technological cycle of metal packaging production, starting from cutting tinplate rolls and ending with shipping finished products using modern equipment from Soudronic AG (Switzerland), Celovani S.p.a., SIG Cantec Gmbh & Co.KG, Alfons-Haar Masnen), and LTG Mailander (Germany)."
+    },
+    "logistics": {
+      "title": "Logistics",
+      "content": "Having its own transport department and logistics center allows Slobozhanka to carry out the delivery of finished products to any point in Ukraine and the CIS countries with minimal costs."
+    },
+    "safety": {
+      "title": "Safety",
+      "content": "A team of service specialists enables ensuring the use of metal packaging in the technological processes of our customers with maximum efficiency and achieving minimal reject rates."
+    }
+  },
+  "contacts": {
+    "location": "Ukraine, Kharkiv, Mehanizatoriv Street, 2"
+  },
+  "goods_params": {
+    "main_metal_thickness": {
+      "thickness_18-20": "Main metal: tinplate with a tin coating class of 5.6/5.6 per 1g/sq.m. Thickness from 0.18 to 0.20",
+      "thickness_17-20": "Main metal: tinplate with a tin coating class of 5.6/5.6 per 1g/sq.m. Thickness from 0.17 to 0.20",
+      "thickness_18-22": "Main metal: tinplate with a tin coating class of 5.6/5.6 per 1g/sq.m. Thickness from 0.18 to 0.22"
+    },
+    "type_size": {
+      "type_size_82": "Type size: 82",
+      "type_size_66": "Type size: 66",
+      "type_size_58": "Type size: 58"
+    },
+    "external_coating": {
+      "darex_ppg_holax": "External coating: Darex, PPG, Holak enamels and coatings.",
+      "ppg_holax": "External coating: PPG and HOLAK food lacquers."
+    },
+    "internal_coating": {
+      "primer_lacquer": "Internal coating: primer and adhesive lacquer",
+      "ppg": "Internal coating: PPG enamel"
+    },
+    "double_sided_coating": {
+      "ppg_lacquer": "Double-sided coating: PPG and HOLAK food lacquers and enamels"
+    },
+    "compound": {
+      "pvc_plastisol_steril_paste": "Compound: PVC-based plastisol for sterilization/pasteurization"
+    },
+    "seal_ring": {
+      "nickel_ring_foodgrade_rubber": "Seal ring: nickel ring based on food-grade rubber"
+    }
+  },
+  "goods": {
+    "euro_82": {
+      "title": "Twist-Off Lid 82"
+    },
+    "euro_66": {
+      "title": "Twist-Off Lid 66"
+    },
+    "sng_home_82": {
+      "title": "SKO 1-82 Household Lid"
+    },
+    "sng_prom_82": {
+      "title": "SKO 1-82 for Industrial Production Lid"
+    },
+    "sng_58": {
+      "title": "SKO 1-58 Lid"
+    }
+  },
+  "header": {
+    "title": {
+      "main": "main",
+      "about_company": "about the company",
+      "products": "products",
+      "advantages": "advantages",
+      "contacts": "contacts"
+    }
+  },
+  "history": {
+    "title": {
+      "history": "History",
+      "production": "Production",
+      "relationship": "Individual Approach to Each Client",
+      "reliability": "Reliability"
+    },
+    "content": {
+      "history": "The company Slobozhanka is one of the Ukrainian leaders in the production of industrial lids such as SKO and Twist-Off.\nTo maintain leadership in bottle caps, can lids, Twist-Off, and SKO lids production, Slobozhanka organizes work based on an individual approach to each customer. Meeting all customer needs involves cooperation at a level that maximally ensures comprehensiveness and affordability of service. Our enterprise stands at the forefront of introducing modern types of packaging in Ukraine at the global level.",
+      "production": "Currently, the enterprise has several production bases and three lines for lithography and lacquering of tinplate. The team of Slobozhanka is composed of true professionals ready to fulfill customer orders in the shortest possible time. One of the main directions of activity is the production of Twist-Off and SKO type lids. High-tech modern equipment for lid production ensures a high level of product quality and timely delivery. Only high-quality materials from the world's largest suppliers are used in lid production.",
+      "relationship": "Depending on the customer's preferences, we offer a variety of metal lids, based on the specific type of canned food and requirements for the appearance of the finished product. Recommended tinplate thicknesses, external and internal coatings, allow the customer to obtain a tin lid SKO or Twist-Off with the required functionality at a minimum price, and for high-temperature sterilization, used for fat-containing products, as well as any colors or with full-color printing.\n\nOnly the best raw materials and materials are used in production to produce high-quality products.",
+      "reliability": "Our enterprise uses exclusively white tinplate with the necessary thickness and tin coating class in production, not compromising on the quality of the produced goods.\n\nIn 2002, the subsidiary received the Russian National Olympus Award, reflecting the service's main principles on which our company's work is based.\nWorking with our enterprise, you get a reliable supplier of high-quality tin products, ensuring the success of your goods and business!!!\n\nOur reliability, product quality, and service are the key to the successful business of our clients!!"
+    }
+  }
+}

@@ -8,10 +8,12 @@ import { ErrorMessage } from './components/error-message'
 import { Footer } from './components/footer'
 import { Goods } from './components/goods'
 import { Header } from './components/header'
+import { HeaderNavMenu } from './components/header-nav-menu'
 import { HistoryList } from './components/history-list'
+import { LanguageToggler } from './components/language-toggler'
 import { LoaderSpinner } from './components/loader-spinner'
-import { Menu } from './components/menu'
 import { useAppSelector } from './hooks/redux'
+import './i18n/config'
 
 function App() {
   const showError = useAppSelector(({ error }) => Boolean(error))
@@ -26,13 +28,14 @@ function App() {
       <div className={'container'}>
         {showApp && (
           <div className={styles.show}>
-            <Menu />
+            <HeaderNavMenu />
             <Header />
             <Article />
             <Goods />
             <BenefitList />
             <HistoryList />
             <Footer />
+            <LanguageToggler />
           </div>
         )}
         <LoaderSpinner />

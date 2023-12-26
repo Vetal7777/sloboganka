@@ -1,13 +1,15 @@
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'
 import { header } from '../../data/content'
 import { useAppSelector } from '../../hooks/redux'
 import { appSlice } from '../../store/reducers/appSlice'
 import { ExitButton } from '../exit-button'
-import styles from './menu.module.css'
+import styles from './header-nav-menu.module.css'
 
-export function Menu() {
+export function HeaderNavMenu() {
   const dispatch = useDispatch()
+  const { t } = useTranslation()
 
   const show = useAppSelector((state) => state.showMenu)
   const statusClass = useMemo(() => (!show ? styles.hide : ''), [show])
@@ -26,7 +28,7 @@ export function Menu() {
             <a
               className={styles.item}
               key={index}
-              children={title}
+              children={t(title)}
               href={link}
               onClick={toggleMenuStatus}
             />

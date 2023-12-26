@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import { contacts } from '../../data/content'
 import styles from './footer.module.css'
 
 export function Footer() {
   const { phones, mail, location } = contacts
+  const { t } = useTranslation()
 
   return (
     <>
@@ -18,7 +20,7 @@ export function Footer() {
             className={styles.mail}
             children={mail}
           />
-          <span children={location} className={styles.location} />
+          <span children={t(location)} className={styles.location} />
         </div>
       </div>
     </>

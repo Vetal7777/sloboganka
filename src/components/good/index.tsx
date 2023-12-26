@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { GoodProps } from '../../@types'
@@ -7,6 +8,7 @@ export function Good({
   item: { pic_length, id, content, title },
   index
 }: GoodProps) {
+  const { t } = useTranslation()
   const pics = new Array(pic_length)
     .fill('')
     .map((elem, picIndex) => `${id}-${picIndex + 1}.png`)
@@ -34,12 +36,12 @@ export function Good({
           ))}
         </Carousel>
         <div className={styles.content}>
-          <h3 className={styles.title} children={title} />
+          <h3 className={styles.title} children={t(title)} />
           {content.map((advantage, contentIndex) => (
             <div
               key={contentIndex}
               className={styles.advantage}
-              children={advantage}
+              children={t(advantage)}
             />
           ))}
         </div>
