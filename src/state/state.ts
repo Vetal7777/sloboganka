@@ -1,7 +1,7 @@
 import { InitialState } from '../model/state'
 
 const initialState: InitialState = {
-  error: null,
+  error: 'Problems with provider',
   isLoading: false,
   showMenu: false
 }
